@@ -1,0 +1,216 @@
+.container {
+	margin: 0 auto;
+	padding: 2rem;
+	font-family: sans-serif;
+}
+
+h1 {
+	color: #c0caf5;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+}
+
+.controls {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+	align-items: center;
+}
+
+.language-select {
+	padding: 0.5rem 0.7rem;
+	background: #1a1b26;
+	color: #c0caf5;
+	border: 1px solid #24283b;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+	appearance: none;
+}
+
+.language-select:hover {
+	background: #24283b;
+}
+
+.btn {
+	padding: 0.5rem 1.5rem;
+	background: #7aa2f7;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.btn:hover {
+	background: #5a8ee6;
+}
+
+.btn:active {
+	transform: translateY(1px);
+}
+
+.editor-section {
+	width: 50%;
+	margin-bottom: 2rem;
+}
+
+.code-container {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	border: 1px solid #24283b;
+	background-color: #1a1b26;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.highlighted-code {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	padding-bottom: 5rem;
+	margin-right: 5rem;
+	background: #1a1b26;
+	overflow: auto;
+	pointer-events: none;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	font-family: 'Google Sans Code', monospace;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.highlighted-code::-webkit-scrollbar {
+	display: none;
+}
+
+.highlighted-code pre {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: transparent !important;
+}
+
+.highlighted-code code {
+	font-family: 'Google Sans Code', monospace !important;
+	font-size: 14px !important;
+	line-height: 1.5 !important;
+	white-space: pre !important;
+	background: transparent !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	border: none !important;
+	outline: none !important;
+}
+
+.highlighted-code * {
+	font-family: inherit !important;
+	font-size: inherit !important;
+	line-height: inherit !important;
+}
+
+.highlighted-code span {
+	font-family: 'Google Sans Code', monospace;
+	font-size: 14px !important;
+	line-height: 1.5 !important;
+	white-space: inherit;
+}
+
+.highlighted-code pre * {
+	box-sizing: border-box;
+}
+
+.code-input {
+	position: absolute;
+	top: 0.85rem;
+	left: 0.85rem;
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+	background: transparent;
+	color: transparent;
+	border: none;
+	outline: none;
+	font-family: 'Google Sans Code', monospace;
+	font-size: 14px;
+	line-height: 1.5;
+	resize: none;
+	caret-color: #c0caf5;
+	overflow: auto;
+	tab-size: 4;
+}
+
+.code-input:focus {
+	outline: none;
+}
+
+.code-input::placeholder {
+	color: #565f89;
+}
+
+.code-input::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+.code-input::-webkit-scrollbar-track {
+	background: #1a1b26;
+}
+
+.code-input::-webkit-scrollbar-thumb {
+	background: #24283b;
+	border-radius: 4px;
+}
+
+.code-input::-webkit-scrollbar-thumb:hover {
+	background: #2d3146;
+}
+
+.svg-section {
+	width: 50%;
+}
+
+.svg-section h3 {
+	color: #c0caf5;
+	margin-bottom: 1rem;
+}
+
+.svg-preview {
+	width: 100%;
+	min-height: 200px;
+	background: #1a1b26;
+	border: 1px solid #24283b;
+	border-radius: 4px;
+	overflow: auto;
+}
+
+.svg-preview svg {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.controls {
+		flex-wrap: wrap;
+	}
+}
+
+.number-input {
+	padding: 0.5rem 0.7rem;
+	background: #1a1b26;
+	color: #c0caf5;
+	border: 1px solid #24283b;
+	border-radius: 4px;
+	font-size: 1rem;
+	appearance: none;
+}
+
+.number-input:focus {
+	outline: none;
+	border: 1px solid #7aa2f7;
+}
